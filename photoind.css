@@ -1,0 +1,53 @@
+/* styles.css */
+
+/* Reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Center body content and apply background color */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #8bdbc9;
+}
+
+/* Title styling */
+.gallery-title {
+    margin: 20px 0;
+    font-size: 2em;
+    color: #333;
+}
+
+/* Gallery container styling */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    max-width: 800px;
+    padding: 10px;
+}
+
+/* Individual gallery item styling */
+.gallery-item {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling with hover effect */
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Zoom effect on image hover */
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
